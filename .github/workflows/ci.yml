@@ -1,0 +1,33 @@
+name: CI - Testes e Lint
+
+on:
+  push:
+    branches: [ "tests-branch" ]
+  pull_request:
+    branches: [ "tests-branch" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout do código
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm' # ou 'yarn' / 'bun' se usar
+
+      - name: 📦 Instalar dependências
+        run: npm ci
+
+      - name: 🔍 Lint (verificação de código)
+        run: npm run lint
+
+      - name: 🧪 Executar testes com Vitest
+        run: npm test
+
+      - name: 🏗️ Verificar se o build funciona (opcional, mas recomendado)
+        run: npm run build
