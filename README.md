@@ -1,4 +1,4 @@
-# 🧾 Finasys
+# 💵 Finasys
 
 **Autor:** Ítalo Rhide, Patrick Oliveira, Lisia Maria, João Pedro
 
