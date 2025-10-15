@@ -1,7 +1,6 @@
-# 🧾 finasys
+# 🧾 Finasys
 
-**Versão:** 0.0.0  
-**Autor:** Desconhecido
+**Autor:** Ítalo Rhide, Patrick Oliveira, Lisia Maria, João Pedro
 
 ## 💡 Introdução
 O **finasys** é uma aplicação web de **gestão financeira** desenvolvida com **React**, **TypeScript** e **Vite**.  
