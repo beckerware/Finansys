@@ -28,6 +28,7 @@ O sistema permite o controle de receitas, despesas e relatórios financeiros de 
 - 🎨 Tailwind CSS
 - 🧵 PostCSS
 - 🧩 ESLint
+- 🖥️ JavaScript
 
 ---
 
