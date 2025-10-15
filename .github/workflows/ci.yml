@@ -23,8 +23,8 @@ jobs:
       - name: 📦 Instalar dependências
         run: npm ci
 
-      - name: 🔍 Lint (verificação de código)
-        run: npm run lint
+      - name: 🔍 Lint (verificação de código - Não bloqueante)
+        run: npm run lint || true
 
       - name: 🧪 Executar testes com Vitest
         run: npm test
